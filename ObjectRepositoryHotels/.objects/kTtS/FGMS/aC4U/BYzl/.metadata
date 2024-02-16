@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Click_CheckAvailability",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "BYzlx1iONkqanF_VZDkg2A",
+  "Reference": "9BqVlui3V0qalQKgFih38Q/BYzlx1iONkqanF_VZDkg2A",
+  "ParentRef": "9BqVlui3V0qalQKgFih38Q/aC4Uk6M-D0Oe8Rrr8Tz3tQ",
+  "Created": "2024-02-15T02:45:37.3222064Z",
+  "Updated": "2024-02-15T02:46:18.697022Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

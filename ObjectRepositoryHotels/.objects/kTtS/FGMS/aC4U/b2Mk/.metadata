@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Click_Support",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "b2Mk16e1VkyWerxe9zh3CQ",
+  "Reference": "9BqVlui3V0qalQKgFih38Q/b2Mk16e1VkyWerxe9zh3CQ",
+  "ParentRef": "9BqVlui3V0qalQKgFih38Q/aC4Uk6M-D0Oe8Rrr8Tz3tQ",
+  "Created": "2024-02-15T02:47:38.0189509Z",
+  "Updated": "2024-02-15T02:48:04.4831823Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

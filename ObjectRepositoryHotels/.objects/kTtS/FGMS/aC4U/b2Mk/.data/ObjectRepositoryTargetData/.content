@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FLLE4EHsc0KLlJpDGX5pew" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://in.hotels.com/ho2912628864/rfc-repubblica-florence-core-florence-italy/" CvTextArea="1096, 176, 54, 16" CvTextArgument="Support" CvType="Text" DesignTimeRectangle="1097, 174, 52, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Support'" FullSelectorArgument="&lt;webctrl parentid='support-cs' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='support-cs' tag='DIV' type='' class='uitk-text uitk-type-300 uitk-text-default-theme' aaname='Support' check:innerText='Support' /&gt;" Guid="54c41751-cae3-488b-bcab-de61c0120577" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RFC Repubblica Florence Core B&amp;amp;B (Florence, Italy), Florence hotel discounts | Hotels.com' /&gt;" SearchSteps="Selector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2eb30558caa1fff9eae8af50152bb405.png" xmlns="">0FbNHE9NEpkigJrRFBsl0Ug</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

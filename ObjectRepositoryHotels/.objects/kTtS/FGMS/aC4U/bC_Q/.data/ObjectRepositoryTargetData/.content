@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qBGYpZnCxkyKFdc2yB4V2g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://in.hotels.com/ho2912628864/rfc-repubblica-florence-core-florence-italy/" DesignTimeRectangle="346, 393, 240, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Select date'" FullSelectorArgument="&lt;webctrl id='hotels-check-out-btn' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='hotels-check-out-btn' tag='BUTTON' type='button' class='uitk-faux-input uitk-form-field-trigger' aaname='Select date' check:innerText='Select date' /&gt;" Guid="78c5368f-9c50-4d66-a1d0-68cf35b36c14" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RFC Repubblica Florence Core B&amp;amp;B (Florence, Italy), Florence hotel discounts | Hotels.com' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e3ddcb555fb82c3988c4a1ca53f9f4b2.png" xmlns="">02nvwUP1Lvk2vYETdtTUlng</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

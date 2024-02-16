@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hSDsjCgCIEehcfnqmcliww" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://in.hotels.com/ho2912628864/rfc-repubblica-florence-core-florence-italy/" CvElementArea="993, 391, 279, 51" CvTextArea="1065, 408, 134, 20" CvTextArgument="Check availability" CvType="Button" DesignTimeRectangle="994, 393, 277, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Check availability'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='uitk-button uitk-button-large uitk-button-fullWidth uitk-button-has-text uitk-button-primary' aaname='Check availability' check:innerText='Check availability' /&gt;" Guid="a24ce772-887b-4a97-87be-6a3b2a2b028d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RFC Repubblica Florence Core B&amp;amp;B (Florence, Italy), Florence hotel discounts | Hotels.com' /&gt;" SearchSteps="Selector, CV" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset Position="TopLeft" X="134" Y="19" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="b37036cba1821e0325b9bcd1b1513f87.png" xmlns="">0K0-a54oyfU-shAlH6a0fWQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Click_CheckInDate",
+  "Type": "Element",
+  "TaxonomyType": "DatePicker",
+  "Id": "irqJ74BT5k-xLvKj_23h1Q",
+  "Reference": "9BqVlui3V0qalQKgFih38Q/irqJ74BT5k-xLvKj_23h1Q",
+  "ParentRef": "9BqVlui3V0qalQKgFih38Q/aC4Uk6M-D0Oe8Rrr8Tz3tQ",
+  "Created": "2024-02-15T02:41:38.7804151Z",
+  "Updated": "2024-02-15T08:58:35.0635282Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

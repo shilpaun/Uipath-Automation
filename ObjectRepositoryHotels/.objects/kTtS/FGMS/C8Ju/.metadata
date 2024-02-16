@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Support_Page",
+  "Type": "Screen",
+  "Id": "C8Ju8o87V0Cjh93utxbVLg",
+  "Reference": "9BqVlui3V0qalQKgFih38Q/C8Ju8o87V0Cjh93utxbVLg",
+  "ParentRef": "9BqVlui3V0qalQKgFih38Q/FGMS-ecjT0OggFfzWv86Fw",
+  "Created": "2024-02-15T03:29:51.0978758Z",
+  "Updated": "2024-02-15T03:29:58.4852342Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,11 @@
+﻿{
+  "Name": "Hotels",
+  "Type": "App",
+  "Id": "kTtS8bfcpk2QoDbyS-fQKA",
+  "Reference": "9BqVlui3V0qalQKgFih38Q/kTtS8bfcpk2QoDbyS-fQKA",
+  "Created": "2024-02-15T02:39:16.084203Z",
+  "Updated": "2024-02-15T02:39:16.084203Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

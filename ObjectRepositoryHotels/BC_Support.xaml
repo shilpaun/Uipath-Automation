@@ -1,0 +1,292 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="BC_Support" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="680,1606" sap2010:WorkflowViewState.IdRef="BC_Support_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="BC_Support" sap:VirtualizedContainerService.HintSize="546,6070" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Hotels_Page" sap:VirtualizedContainerService.HintSize="484,5959" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="fd869766-78a1-42af-9484-bc4d707fa58c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,5742" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Text" />
+              <Variable x:TypeArguments="x:String" Name="Text1" />
+              <Variable x:TypeArguments="x:String" Name="Str_Text2" />
+              <Variable x:TypeArguments="x:String" Name="Str_Text3" />
+              <Variable x:TypeArguments="x:String" Name="Str_Text4" />
+              <Variable x:TypeArguments="x:String" Name="Str_Text5" />
+              <Variable x:TypeArguments="x:String" Name="Str_Text6" />
+              <Variable x:TypeArguments="x:String" Name="Str_Text7" />
+              <Variable x:TypeArguments="x:String" Name="Str_Text8" />
+              <Variable x:TypeArguments="x:String" Name="Str_Text9" />
+              <Variable x:TypeArguments="x:String" Name="Str_Text10" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click_Support'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://in.hotels.com/ho2912628864/rfc-repubblica-florence-core-florence-italy/" ContentHash="FLLE4EHsc0KLlJpDGX5pew" CvTextArea="1096, 176, 54, 16" CvTextArgument="Support" CvType="Text" DesignTimeRectangle="1097, 174, 52, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Support'" FullSelectorArgument="&lt;webctrl parentid='support-cs' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='support-cs' tag='DIV' type='' class='uitk-text uitk-type-300 uitk-text-default-theme' aaname='Support' check:innerText='Support' /&gt;" Guid="54c41751-cae3-488b-bcab-de61c0120577" InformativeScreenshot="2eb30558caa1fff9eae8af50152bb405.png" Reference="9BqVlui3V0qalQKgFih38Q/b2Mk16e1VkyWerxe9zh3CQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RFC Repubblica Florence Core B&amp;amp;B (Florence, Italy), Florence hotel discounts | Hotels.com' /&gt;" SearchSteps="Selector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'How we'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/20776" DesignTimeRectangle="442, 106, 273, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'How we'" FullSelectorArgument="&lt;webctrl parentid='article-title-20776' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='article-title-20776' tag='H3' type='' class='' aaname='How we order your search results' check:innerText='How we order your search results' /&gt;" Guid="72684143-4f4a-49fc-9b86-34eb4f491ef4" InformativeScreenshot="d308e31f5af1ce2664e47cc4ea396763.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'There are'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" TextString="[Text1]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/20776" DesignTimeRectangle="407, 133, 840, 911" DesignTimeScaleFactor="1" FriendlyName="'There are'" FullSelectorArgument="&lt;webctrl id='article-detail-20776' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='article-detail-20776' tag='DIV' type='' class='article-detail-container col' aaname='              ' /&gt;" Guid="f829c328-5104-4698-99a7-9cc21d7ea057" InformativeScreenshot="37b0bbc25a9e58d5184efb31abd129b4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="WriteWord.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="WriteWord.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="Str_Text">[Text1]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Beware of email scams'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/20776" DesignTimeRectangle="442, 155, 187, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Beware of email scams'" FullSelectorArgument="&lt;webctrl parentid='article-title-22906' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='article-title-22906' tag='H3' type='' class='' aaname='Beware of email scams' check:innerText='Beware of email scams' /&gt;" Guid="e6527611-76ac-4578-99d0-e20a6623fa9d" InformativeScreenshot="fd792d03dffae290e1f5fdc37b2e6fd0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Phishing is'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" TextString="[Str_Text2]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/22906" DesignTimeRectangle="407, 165, 840, 423" DesignTimeScaleFactor="1" FriendlyName="'Phishing is'" FullSelectorArgument="&lt;webctrl id='article-detail-22906' tag='DIV' innertext='Phishing is a scam where a criminal sends an email asking for personal information, and attempts to trick the recipient into responding by clicking on a link, opening an attachment, or directly providing sensitive information. The emails can be quite convincing, since they appear to come from established businesses or organizations, and sometimes even link to legitimate-looking websites. However, the information you provide—such as a social security or credit card number—goes directly to the criminal, who c*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='article-detail-22906' tag='DIV' type='' class='article-detail-container col' aaname='       ' /&gt;" Guid="afe45aaa-2ff5-4639-b1d1-4ca6e4c3e888" ImageBase64="" InformativeScreenshot="00eb5ac2c0a717b1e5b14866021bdb2b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="WriteWord.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="WriteWord.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="Str_Text">[Str_Text2]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Beware of'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/22906" DesignTimeRectangle="442, 247, 228, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Beware of'" FullSelectorArgument="&lt;webctrl parentid='article-title-22905' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='article-title-22905' tag='H3' type='' class='' aaname='Beware of phone call scams' check:innerText='Beware of phone call scams' /&gt;" Guid="799d718b-b5b9-433c-9dbb-e31b30aa5197" ImageBase64="" InformativeScreenshot="764147027590719ce3d460c11043711c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Have you'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" TextString="[Str_Text3]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/22905" DesignTimeRectangle="407, 165, 840, 571" DesignTimeScaleFactor="1" FriendlyName="'Have you'" FullSelectorArgument="&lt;webctrl id='article-detail-22905' tag='DIV' innertext='Have you received an automated phone call claiming that you’ve won a prize from a well-known travel company? This is a scam. Hang up and do not give the caller any information. What it is The scammers typically use “spoofing” technology to make the incoming telephone number falsely appear to originate from a local area code. Calls usually begin with a pre-recorded message claiming the caller is a well-known travel company, and promising the recipient has “won” some type of prize or discount off travel servi*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='article-detail-22905' tag='DIV' type='' class='article-detail-container col' aaname='  The scammers typically use “spoofing” technology to make the incoming telephone number falsely appear to originate from a local area code.    We will never call or send an email asking for your password or other personal information. If you think you have received a fraudulent phone call:    ' /&gt;" Guid="0c8a9c8e-573c-4e9c-b01b-4bf4c32fbd96" ImageBase64="" InformativeScreenshot="73eb0604b8eb7288af9681559ce3fb9d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="WriteWord.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="WriteWord.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="Str_Text">[Str_Text3]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Accessibility definitio…'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/22905" DesignTimeRectangle="442, 228, 195, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Accessibility definitio…'" FullSelectorArgument="&lt;webctrl parentid='article-title-20379' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='article-title-20379' tag='H3' type='' class='' aaname='Accessibility definitions' check:innerText='Accessibility definitions' /&gt;" Guid="933ca366-75ef-411e-bd5f-56a830f4fc21" ImageBase64="" InformativeScreenshot="95c710ec9d5b1ed70ca6e390eb40f86f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Not all'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" TextString="[Str_Text4]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/20379" DesignTimeRectangle="407, 69, 840, 686" DesignTimeScaleFactor="1" FriendlyName="'Not all'" FullSelectorArgument="&lt;webctrl id='article-detail-20379' tag='DIV' innertext='Not all bookings are suitable for customers with reduced mobility or certain accessibility needs.   Contact us   to discuss which options are right for you before you complete your booking. Some accessibility features can be reserved and some not as they are either property-level features (such as path of travel) or they are property-stocked items such as equipment for the hearing impaired.  Accessibility equipment for the deaf. This includes TTY for phone, visual or flashing fire alarm, and vibrating alarm*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='article-detail-20379' tag='DIV' type='' class='article-detail-container col' aaname='       ' /&gt;" Guid="fc5ab5a4-befb-4e83-81af-0c4efcd34e21" ImageBase64="" InformativeScreenshot="e11e1c323ba6e18cdd144e1083209627.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="WriteWord.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="WriteWord.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="Str_Text">[Str_Text4]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '‘Private host’ listings'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/20379" DesignTimeRectangle="442, 277, 170, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'‘Private host’ listings'" FullSelectorArgument="&lt;webctrl parentid='article-title-30392' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='article-title-30392' tag='H3' type='' class='' aaname='‘Private host’ listings' check:innerText='‘Private host’ listings' /&gt;" Guid="0c481307-5e85-48ef-a223-623c20e6a519" ImageBase64="" InformativeScreenshot="54d47771d9ca5298691bf5d223cd156b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'When you'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" TextString="[Str_Text5]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/30392" DesignTimeRectangle="407, 165, 840, 336" DesignTimeScaleFactor="1" FriendlyName="'When you'" FullSelectorArgument="&lt;webctrl id='article-detail-30392' tag='DIV' innertext='When you browse our European Union (EU) websites and book a property that’s located in the EU/European Economic Area (EEA), it may be provided by a professional host (this is generally the case) or it may be provided by a private host.  If you have a professional host, that means it’s their job to offer properties for booking — it’s part of their trade, business, or profession. If the property has told us they are a ‘private host,’ that means they’re offering a property for booking, but it’s not something t*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='article-detail-30392' tag='DIV' type='' class='article-detail-container col' aaname='      ' /&gt;" Guid="318aeea5-dc65-47bb-a760-547816adc1f5" ImageBase64="" InformativeScreenshot="b04c27f9d43d51b2c5248a0c4d4cb8cd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="WriteWord.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="WriteWord.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="Str_Text">[Str_Text5]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Changes or'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/20381" DesignTimeRectangle="442, 326, 389, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Changes or'" FullSelectorArgument="&lt;webctrl parentid='article-title-20381' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='article-title-20381' tag='H3' type='' class='' aaname='Changes or cancellations due to severe weather' check:innerText='Changes or cancellations due to severe weather' /&gt;" Guid="4c6d92d1-a936-4c22-9910-389d0711431a" ImageBase64="" InformativeScreenshot="e67257f93dc1bf701a2f4d3516251693.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'When severe'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" TextString="[Str_Text6]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/20381" DesignTimeRectangle="407, 165, 840, 310" DesignTimeScaleFactor="1" FriendlyName="'When severe'" FullSelectorArgument="&lt;webctrl id='article-detail-20381' tag='DIV' innertext='When severe weather threatens your travel destination, you might want to change or cancel your hotel or vacation rental booking. Please   call us   to check if your hotel or vacation rental has modified its change and cancellation policies. Good to know  We do not charge change or cancel fees, but your hotel or vacation rental might. We cannot guarantee that your hotel or vacation rental will have power in the case of severe weather. For questions about weather impact while you&amp;apos;re travelling, please contact*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='article-detail-20381' tag='DIV' type='' class='article-detail-container col' aaname='     ' /&gt;" Guid="6d216ae5-d311-4185-a772-b62afbc15916" ImageBase64="" InformativeScreenshot="64438d471bea9697c50a6c7436bb5e49.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="WriteWord.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="WriteWord.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="Str_Text">[Str_Text6]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Collect Hotels.com®'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/20386" DesignTimeRectangle="440, 361, 630, 48" DesignTimeScaleFactor="1" FriendlyName="'Collect Hotels.com®'" FullSelectorArgument="&lt;webctrl id='article-title-20386' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='article-title-20386' tag='DIV' type='' class='info-summary col k' aaname='  ' check:innerText='Collect Hotels.com® Rewards stamps' /&gt;" Guid="28633efe-8cdf-486d-b35b-42d7864933c3" ImageBase64="" InformativeScreenshot="10cc4ca6fb179807131dcf1f3dfc1f84.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'How it'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" TextString="[Str_Text7]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/20386" DesignTimeRectangle="407, 14, 840, 797" DesignTimeScaleFactor="1" FriendlyName="'How it'" FullSelectorArgument="&lt;webctrl id='article-detail-20386' tag='DIV' innertext='How it works  Collect 1 stamp for every night you stay at an eligible property. Any stamps you collect are added to your account within 72 hours after check-out. Collect 10 stamps, get 1 reward* night at an eligible property. The value of your reward* night is equal to the average rate of the 10 nights you collected to earn it.  To collect stamps for online bookings  Sign in to your account online or via the Hotels.com app. Choose a property with the Hotels.com® Rewards logo.  To collect stamps for phone bo*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='article-detail-20386' tag='DIV' type='' class='article-detail-container col' aaname='             ' /&gt;" Guid="3ebcabe3-3bac-484f-b1a5-c2131cb93abc" ImageBase64="" InformativeScreenshot="702eb27b89fbbb6d48844e77f2179ee9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="WriteWord.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="WriteWord.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="Str_Text">[Str_Text7]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Get a'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/20369" DesignTimeRectangle="442, 424, 435, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Get a'" FullSelectorArgument="&lt;webctrl parentid='article-title-20369' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='article-title-20369' tag='H3' type='' class='' aaname='Get a receipt for your hotel or vacation rental booking' check:innerText='Get a receipt for your hotel or vacation rental booking' /&gt;" Guid="7af56122-e595-41da-b4d4-bd94465ae547" ImageBase64="" InformativeScreenshot="8654f4eda81e043d7a0d7408ce911477.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'To print'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" TextString="[Str_Text8]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/20369" DesignTimeRectangle="407, 73, 840, 679" DesignTimeScaleFactor="1" FriendlyName="'To print'" FullSelectorArgument="&lt;webctrl id='article-detail-20369' tag='DIV' innertext='To print a receipt from your confirmation email  In your confirmation email, select Print receipt. Follow the instructions.  If you booked with your Hotels.com account  Sign in on the Manage your bookings page. Choose your booking under Upcoming or Completed. Select View and print a receipt. Follow the instructions.  If you booked as a guest  Go to Find your bookings. Enter the last name of the card holder and your credit / debit card number or confirmation number, and select Submit. Select View your reserv*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='article-detail-20369' tag='DIV' type='' class='article-detail-container col' aaname='          ' /&gt;" Guid="bdf619e9-4ba8-464c-a3e9-7b39b45a7150" ImageBase64="" InformativeScreenshot="9dd933fa4b57432195f2d70c6fa837e4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="WriteWord.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="WriteWord.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="Str_Text">[Str_Text8]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Hotel and'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/20370" DesignTimeRectangle="442, 473, 343, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Hotel and'" FullSelectorArgument="&lt;webctrl parentid='article-title-20370' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='article-title-20370' tag='H3' type='' class='' aaname='Hotel and vacation rental payment options' check:innerText='Hotel and vacation rental payment options' /&gt;" Guid="4531de56-402f-4056-b141-b93db36af341" ImageBase64="" InformativeScreenshot="17bd3d234602a598a5d56bc2347d085b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Pay online'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" TextString="[Str_Text9]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/20370" DesignTimeRectangle="407, 15, 840, 794" DesignTimeScaleFactor="1" FriendlyName="'Pay online'" FullSelectorArgument="&lt;webctrl id='article-detail-20370' tag='DIV' innertext='Pay online now or pay at hotel or vacation rental Some hotels or vacation rentals give you the option to pay online now or to pay at the hotel or vacation rental. Pay now details  You can pay using a credit or debit card, or PayPal. Additional payment options will vary by country. You will be charged at the time of booking. Hotels.com will process your payment in your local currency. You can collect rewards stamps and redeem Hotels.com® reward* nights. You can cancel for a full refund before the hotel&amp;apos;s or *' /&gt;" FuzzySelectorArgument="&lt;webctrl id='article-detail-20370' tag='DIV' type='' class='article-detail-container col' aaname='              ' /&gt;" Guid="c907b139-d1eb-4796-b072-49db5f1e7de0" ImageBase64="" InformativeScreenshot="8449fa9aa76daca198c78e93cc259f9e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="WriteWord.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="WriteWord.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="Str_Text">[Str_Text9]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Hotel and'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/20370" DesignTimeRectangle="442, 522, 396, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Hotel and'" FullSelectorArgument="&lt;webctrl parentid='article-title-20374' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='article-title-20374' tag='H3' type='' class='' aaname='Hotel and vacation rental check-in and check-out' check:innerText='Hotel and vacation rental check-in and check-out' /&gt;" Guid="2863b652-a0e9-42e3-a02d-167e09a475c2" ImageBase64="" InformativeScreenshot="cf87d1e3cd001ed3993060d9d6df52f4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'You can'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="fd869766-78a1-42af-9484-bc4d707fa58c" TextString="[Str_Text10]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://service.hotels.com/en-in/#/myTrips/20374" DesignTimeRectangle="407, 75, 840, 674" DesignTimeScaleFactor="1" FriendlyName="'You can'" FullSelectorArgument="&lt;webctrl id='article-detail-20374' tag='DIV' innertext='You can find your hotel or vacation rental&amp;apos;s check-in time and phone number in your confirmation email. Check-in  You will need a government-issued ID to check in. You can check in to most hotels and vacation rentals any time between their earliest check-in time and midnight. To request an earlier check-in time, call the hotel or vacation rental directly. Rooms booked on Hotels.com are guaranteed for late arrival. If you will arrive after midnight, please contact the hotel or vacation rental directly to ens*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='article-detail-20374' tag='DIV' type='' class='article-detail-container col' aaname='             ' /&gt;" Guid="d99751ba-355a-47eb-a2a5-88eb04ae4881" ImageBase64="" InformativeScreenshot="9e31431afb94b49c2020264e1d571017.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Customer Service Portal' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="WriteWord.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="WriteWord.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="Str_Text">[Str_Text10]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="XjsUcS93lEaQj8MMnBVM-A" IconBase64="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" InformativeScreenshot="453393b37710cadc447de96dc34c0401.jpg" Reference="9BqVlui3V0qalQKgFih38Q/aC4Uk6M-D0Oe8Rrr8Tz3tQ" Selector="&lt;html app='chrome.exe' title='RFC Repubblica Florence Core B&amp;amp;B (Florence, Italy), Florence hotel discounts | Hotels.com' /&gt;" Title="RFC Repubblica Florence Core B&amp;B (Florence, Italy), Florence hotel discounts | Hotels.com" Url="https://in.hotels.com/ho2912628864/rfc-repubblica-florence-core-florence-italy/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

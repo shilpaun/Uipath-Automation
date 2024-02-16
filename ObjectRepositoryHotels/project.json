@@ -1,18 +1,20 @@
 {
-  "name": "Practice2",
-  "projectId": "01f37788-dff3-416e-b4bd-7ba53a99243e",
-  "description": "Test Automation Project",
-  "main": "Main.xaml",
+  "name": "ObjectRepositoryHotels",
+  "projectId": "b60d98ca-18f1-4204-9de2-46152bab51d3",
+  "description": "Blank Library",
+  "main": "NewActivity.xaml",
   "dependencies": {
-    "UiPath.System.Activities": "[23.12.0-preview]",
-    "UiPath.Testing.Activities": "[23.12.0-preview]",
-    "UiPath.UIAutomation.Activities": "[23.10.8]"
+    "UiPath.Excel.Activities": "2.23.0-preview",
+    "UiPath.MicrosoftOffice365.Activities": "2.5.7",
+    "UiPath.System.Activities": "23.10.4",
+    "UiPath.UIAutomation.Activities": "23.10.8",
+    "UiPath.Word.Activities": "1.19.0-preview"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.12.0.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.2",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -33,7 +35,7 @@
   },
   "designOptions": {
     "projectProfile": "Developement",
-    "outputType": "Tests",
+    "outputType": "Library",
     "libraryOptions": {
       "includeOriginalXaml": false,
       "privateWorkflows": []
@@ -44,23 +46,9 @@
     "fileInfoCollection": [
       {
         "editingStatus": "InProgress",
-        "testCaseId": "45b5a79f-4fef-481c-9794-1436f3707331",
+        "testCaseId": "dfcb9d57-8f14-4a1b-b31a-7adc1debd158",
         "testCaseType": "TestCase",
-        "fileName": "TestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "f752d5c2-9d56-427a-adfc-96fa02574b96",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "usecase1.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "b53548e8-0d65-44a2-a58a-d55d0b58e9b7",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "TC01_OrangeHRM.xaml"
+        "fileName": "Sequence1.xaml"
       }
     ],
     "saveToCloud": false
