@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="BC_CheckAvailability" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1102,2708" sap2010:WorkflowViewState.IdRef="BC_CheckAvailability_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="BC_CheckAvailability" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1102,3610" sap2010:WorkflowViewState.IdRef="BC_CheckAvailability_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -33,6 +33,11 @@
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -91,30 +96,30 @@
       <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="BC_CheckAvailability" sap:VirtualizedContainerService.HintSize="1112,2643" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="BC_CheckAvailability" sap:VirtualizedContainerService.HintSize="1112,3545" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="Str_Browser">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">msedge.exe</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="msedge.exe" Name="Str_Browser" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: RFC Repubblica Florence Core B&amp;B (Florence, Italy), Florence hotel discounts | H" sap:VirtualizedContainerService.HintSize="1050,2532" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="False" ScopeGuid="ae07d1f2-efe3-4ad8-96b1-e18d5e2a9040" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: RFC Repubblica Florence Core B&amp;B (Florence, Italy), Florence hotel discounts | H" sap:VirtualizedContainerService.HintSize="1050,3434" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="False" ScopeGuid="ae07d1f2-efe3-4ad8-96b1-e18d5e2a9040" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,2315" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,3217" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Default="20 Feb 2024" Name="Vdate" />
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -165,9 +170,9 @@
                 <uix:TargetAnchorable BrowserURL="https://in.hotels.com/ho2912628864/rfc-repubblica-florence-core-florence-italy/" ContentHash="qBGYpZnCxkyKFdc2yB4V2g" DesignTimeRectangle="346, 393, 240, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Select date'" FullSelectorArgument="&lt;webctrl id='hotels-check-out-btn' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='hotels-check-out-btn' tag='BUTTON' type='button' class='uitk-faux-input uitk-form-field-trigger' aaname='Select date' check:innerText='Select date' /&gt;" Guid="78c5368f-9c50-4d66-a1d0-68cf35b36c14" InformativeScreenshot="e3ddcb555fb82c3988c4a1ca53f9f4b2.png" Reference="9BqVlui3V0qalQKgFih38Q/bC_Q36O7m0GTAdnGHJiwQA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RFC Repubblica Florence Core B&amp;amp;B (Florence, Italy), Florence hotel discounts | Hotels.com' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'Select check-out'" sap:VirtualizedContainerService.HintSize="954,489" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="ae07d1f2-efe3-4ad8-96b1-e18d5e2a9040" Timeout="5" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'Select check-out'" sap:VirtualizedContainerService.HintSize="954,672" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="ae07d1f2-efe3-4ad8-96b1-e18d5e2a9040" Timeout="5" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,455" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -184,6 +189,7 @@
                       </uix:TargetAnchorable>
                     </uix:NClick.Target>
                   </uix:NClick>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Fatal]" Message="[&quot;Inside Checkout Date&quot;]" />
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
@@ -210,6 +216,7 @@
                 <uix:TargetAnchorable BrowserURL="https://in.hotels.com/ho2912628864/rfc-repubblica-florence-core-florence-italy/" CvElementArea="775, 675, 85, 44" CvTextArea="795, 690, 44, 14" CvTextArgument="Done" CvType="Button" DesignTimeRectangle="777, 677, 80, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Done'" FullSelectorArgument="&lt;webctrl aria-label='Save changes and close the date picker.' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Save changes and close the date picker.' tag='BUTTON' type='button' class='uitk-button uitk-button-medium uitk-button-has-text uitk-button-primary' aaname='Done' check:innerText='Done' /&gt;" Guid="720915e3-d862-4f6e-86c5-b67a3f544f2a" InformativeScreenshot="0a95567da56b225ad46d8b62ee04d708.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RFC Repubblica Florence Core B&amp;amp;B (Florence, Italy), Florence hotel discounts | Hotels.com' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,143" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;AFter CheckoutDate&quot;]" />
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '1 room, 2 travellers'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ae07d1f2-efe3-4ad8-96b1-e18d5e2a9040" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://in.hotels.com/ho2912628864/rfc-repubblica-florence-core-florence-italy/" DesignTimeRectangle="594, 341, 392, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'1 room, 2 travellers'" FullSelectorArgument="&lt;webctrl aria-label='Travellers, 1 room, 2 travellers' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Travellers, 1 room, 2 travellers' tag='BUTTON' type='button' class='uitk-fake-input uitk-form-field-trigger' aaname='1 room, 2 travellers' check:innerText='1 room, 2 travellers' /&gt;" Guid="4c10a131-a229-451a-a3d1-0a2cd38c79b5" InformativeScreenshot="7c2d285b206ea5088f17141fc42243fa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RFC Repubblica Florence Core B&amp;amp;B (Florence, Italy), Florence hotel discounts | Hotels.com' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
@@ -220,11 +227,18 @@
                 <uix:TargetAnchorable BrowserURL="https://in.hotels.com/ho2912628864/rfc-repubblica-florence-core-florence-italy/?pwaDialog=travelerPicks" CvElementArea="465, 537, 451, 55" CvTextArea="669, 556, 43, 14" CvTextArgument="Done" CvType="Button" DesignTimeRectangle="467, 539, 448, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Done'" FullSelectorArgument="&lt;webctrl aaname='Done' parentid='app-layer-travelerPicks' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Done' parentid='app-layer-travelerPicks' tag='BUTTON' type='button' class='uitk-button uitk-button-large uitk-button-fullWidth uitk-button-has-text uitk-button-primary uitk-button-floating-full-width' check:innerText='Done' /&gt;" Guid="4ed051c2-872c-44a0-b0eb-a2b41b5bf9de" InformativeScreenshot="099b37c9d2ca7a6628681892588809b7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RFC Repubblica Florence Core B&amp;amp;B (Florence, Italy), Florence hotel discounts | Hotels.com' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,143" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;After Room Selection&quot;]" />
             <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="10" DisplayName="Click 'Check availability'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ae07d1f2-efe3-4ad8-96b1-e18d5e2a9040" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://in.hotels.com/ho2912628864/rfc-repubblica-florence-core-florence-italy/" CvElementArea="995, 304, 278, 52" CvTextArea="1065, 321, 134, 20" CvTextArgument="Check availability" CvType="Button" DesignTimeRectangle="995, 306, 276, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Check availability'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='uitk-button uitk-button-large uitk-button-fullWidth uitk-button-has-text uitk-button-primary' aaname='Check availability' check:innerText='Check availability' /&gt;" Guid="aec3d534-b74a-4a98-811d-745b2ee81aca" InformativeScreenshot="be7a17f3b4645683b72fab07dc9a6df4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RFC Repubblica Florence Core B&amp;amp;B (Florence, Italy), Florence hotel discounts | Hotels.com' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='New column 0 Url' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='0' name='Column0' attr='href'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="ae07d1f2-efe3-4ad8-96b1-e18d5e2a9040" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="324, -3653, 756, 22515" DesignTimeScaleFactor="1" FriendlyName="'Save an'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app-layer-base' tag='DIV' /&gt;" Guid="cf401115-36b8-45b9-b586-0eae512b9313" InformativeScreenshot="26b8344c3b9b79f5af39fbccf3c6e202.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Florence, Tuscany, Italy Hotel Search results' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="954,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="C:\New folder\Hotels.xlsx" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
